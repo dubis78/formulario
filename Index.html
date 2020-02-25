@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title" id="title"><b>DC v MARVEL</b></h1>
+             <p class="header__description" id="description">
+              <b><i>!!Muchas gracias por ayudarnos a descubrir que fandom es mayor!!</i></b>
+            </p>
+          </header>
+        <main>
+            <form class="formulario" id="survey-form">
+                <!--<article class="formulario__input">-->
+                  <label id="name-label" for="name">Nombre</label>
+                  <input type="text" name="name" id="name" class="formulario__control" placeholder="Por favor ingresar nombre"required/>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                  <label id="email-label" for="email">E-mail</label>
+                  <input type="email" name="email" id="email" class="formulario__control" placeholder="Por favor ingresar E-mail" required/>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="rango">Rango de edad</label>
+                    <select id="rango" name="rango" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar rango</option>
+                      <option value="infancia">6-11</option>
+                      <option value="adolecencia">12-18</option>
+                      <option value="juventud">14-26</option>
+                      <option value="adultez">27-59</option>
+                      <option value="vejez">60 o más</option>                      
+                    </select>
+                  <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label id="number-label" for="number">Solo por curiosidad...¿cuántas mascotas tienes? (optional)</label>
+                  <input type="number" name="PetNumber" id="number" min="0" max="99" class="formulario__control" placeholder="valor de 0-99"/>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion1">En general prefiere ¿DC o Marvel?</label>
+                    <select id="opcion1" name="opcion1" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="ambos">Ambos</option>
+                      <option value="DC">DC</option>
+                      <option value="Marvel">Marvel</option>
+                      <option value="adultez">Ninguno le agrada</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion1">En general prefiere ¿DC o Marvel?</label>
+                    <select id="opcion1" name="opcion1" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="ambos">Ambos</option>
+                      <option value="dc">DC</option>
+                      <option value="marvel">Marvel</option>
+                      <option value="ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion2">Hasta la fecha ¿Considera que hace mejores videojuegos DC o Marvel?</label>
+                    <select id="opcion2" name="opcion2" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="v-ambos">Ambos</option>
+                      <option value="v-dc">DC</option>
+                      <option value="v-marvel">Marvel</option>
+                      <option value="v-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion3">Hasta la fecha ¿Considera que hace mejores pelicualas live action DC o Marvel?</label>
+                    <select id="opcion3" name="opcion3" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="p-ambos">Ambos</option>
+                      <option value="p-dc">DC</option>
+                      <option value="p-marvel">Marvel</option>
+                      <option value="p-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion4">Hasta la fecha ¿Considera que hace mejores pelicualas animadas?</label>
+                    <select id="opcion4" name="opcion4" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="pa-ambos">Ambos</option>
+                      <option value="pa-adc">DC</option>
+                      <option value="pa-marvel">Marvel</option>
+                      <option value="pa-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion5">Hasta la fecha ¿Considera que hace mejores series live action DC o Marvel?</label>
+                    <select id="opcion5" name="opcion5" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="s-ambos">Ambos</option>
+                      <option value="s-dc">DC</option>
+                      <option value="s-marvel">Marvel</option>
+                      <option value="s-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion6">Hasta la fecha ¿Considera que hace mejores series animadas?</label>
+                    <select id="opcion6" name="opcion6" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="sa-ambos">Ambos</option>
+                      <option value="sa-adc">DC</option>
+                      <option value="sa-marvel">Marvel</option>
+                      <option value="sa-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                    <label for="opcion7">Hasta la fecha ¿Considera que hace mejores comics?</label>
+                    <select id="opcion7" name="opcion7" class="formulario__control" required>
+                      <option disabled selected value>Por favor seleccionar preferencia</option>
+                      <option value="c-ambos">Ambos</option>
+                      <option value="c-adc">DC</option>
+                      <option value="c-marvel">Marvel</option>
+                      <option value="c-ninguno">Ninguno de los dos</option>                                           
+                    </select>
+                <!--</article>-->               
+                    <label for="dropdown">¿Te parecieron adecaudas las preguntas?</label>
+                    <select id="dropdown" name="dropdown" class="formulario__control" required>
+                        <option disabled selected value>Por favor seleccionar opción</option>
+                        <option value="grandiosas">Grandiosas</option>
+                        <option value="buenas">Buenas</option>
+                        <option value="comunes">Comunes</option>
+                        <option value="malas">Malas</option>
+                        <option value="horribles">Horribles</option>
+                    </select>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->    
+                    <div class="formulario__radiocheck">
+                        <p>¿Qué mejorarias de esta encuesta?</p>                
+                        <div class="formulario__radiocheck-rc">
+                            <input name="prefer" value="maspregunt" type="checkbox" class="input-checkbox"/>Más preguntas                    
+                            <input name="prefer" value="menpregunt" type="checkbox" class="input-checkbox"/>Menos preguntas
+                        </div>                    
+                    <!--</article>-->
+                    <!--<article class="formulario__input">-->
+                        <p>¿Compartirías esta encuesta con tus amigos?</p>                     
+                        <div class="formulario__radiocheck-rc"> 
+                            <input name="share" value="si" type="radio" class="input-radio" checked/>Si                    
+                            <input name="share" value="no" type="radio" class="input-radio" checked/>No
+                        </div>
+                    </div>
+                <!--</article>-->              
+                <!--<article class="formulario__input">-->
+                <label for="comments">¿Alguna sugerencia?</label>
+                <textarea id="comments" class="formulario__textarea" name="comments" placeholder="Ingresa tus sugerencias aquí..."></textarea>
+                <!--</article>-->
+                <!--<article class="formulario__input">-->
+                  <button type="submit" id="submit" class="formulario__button">
+                    Submit
+                  </button>
+                <!--</article>-->
+              </form>
+        </main>
+        <footer>
+            <h5>
+                Hecho por: Dubenis Andrea L.
+            </h5>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --white: #f9f9f9;
+  --black: #000;
+  --color-dark: rgba(17, 17, 20, 0.8);
+  --color-green: #37af65;
+  --dc-color:#070a59;
+  --marvel-color:#870d00;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--white);
+  margin: 0;  
+}
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    font-family:sans-serif;
+    text-align: center; 
+  }
+
+  .header__title {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  .header__description {
+    font-size: 1.5rem;
+  }
+  
+  .header__title, .header__description {
+    margin-top: 0;
+    margin-bottom: 0.5rem;    
+  }
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;  
+  background-image:url(https://miro.medium.com/max/1200/1*ueM_xXLpnLBYgWh5tqEqDg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1140px) {
+    body::before{
+        z-index: -1; 
+        background-image:url(https://lh3.googleusercontent.com/48oQWPmE7R2CeuAqnBxGAA7T8BlyCo0ajl4GJ9aNoE37Q5nm5gG2NbUQYDvlkezmAWu1KNwOLBTuIlSslrC6qJaF_96NZqOhfeeESidW3OKjMEMMZTIX67PlYsgkhod3LEq6bGY4aLo=w1200-h960-no);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+label {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input{
+    width: 0.1rem;
+}
+
+button {
+  border: none;
+}
+
+form {
+  background: var(--color-dark);
+  padding: .5rem 0.6rem;
+  border-radius: 0.8rem;
+  margin: 0 4rem;
+}
+
+  @media (max-width: 620px) {
+    form {
+      padding: 1.5rem; 
+      margin: 0 2rem;   
+    }
+}
+
+.formulario__input {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.formulario__control {
+  display: block;
+  width: 75%;
+  margin:0 auto;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (max-width: 950px) {
+    .formulario__control{
+        width: 80%;   
+    }
+}
+
+@media (max-width: 620px) {
+    .formulario__control{
+        width: 100%;   
+    }
+}
+
+.formulario__control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formulario__radiocheck{
+    display:block;
+    width: 75%;
+    margin:0 auto;
+}
+
+@media (max-width: 950px) {
+    formulario__radiocheck{
+        width: 80%;   
+    }
+}
+
+@media (max-width: 620px) {
+    formulario__radiocheck{
+        width: 100%;   
+    }
+}
+
+/*@media (max-width: 530px) {
+    formulario__radiocheck{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;   
+    }
+}*/
+
+.formulario__radiocheck p{
+    text-align: center;
+}
+
+.formulario__radiocheck-rc{
+    display: block;
+    width: 50%;
+    justify-content: center;
+    margin:1rem auto;
+    text-align: center;  
+}
+
+@media (max-width: 1140px) {
+    .formulario__radiocheck-rc{
+        width: 100%;   
+    }
+}
+
+.input-radio,
+.input-checkbox {   
+  margin-right: 0.7rem;
+  margin-left: 0.4rem;
+  min-height: 1.2rem;
+  min-width: 1.2rem;  
+}
+
+.formulario__textarea {
+    display: block;
+  min-height: 120px;
+  width: 75%;
+  padding: 0.6rem;
+  border-radius: 12px;
+  background-color: var(--white);
+  resize: vertical;
+  margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+    .formulario__textarea{
+        width: 80%;   
+    }
+}
+
+@media (max-width: 620px) {
+    .formulario__textarea{
+        width: 100%;   
+    }
+}
+
+.formulario__button {
+  display: block;
+  width: 25vw;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 12px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
